@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa haha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Para, Heloisa</h1>
+        <p>A pessoa mais incrível e perfeita que eu tanto amo</p>
+        <div class="image-container">
+            <img src="imagens/helo1.jpg" alt="Foto 1 da Heloisa">
+            <img src="imagens/helo2.jpg" alt="Foto 2 da Heloisa">
+            <img src="imagens/helo3.jpg" alt="Foto 3 da Heloisa">
+        </div>
+    </header>
+    
+    <section class="content">
+        <h2>EU TE AMO MAIS QUE TUDO</h2>
+        <p>Quero viver uma vida toda ao seu lado</p>
+    </section>
+    
+    <section class="request">
+        <h2>Você aceita ser minha namorada?</h2>
+        <p>Eu te amo muito, e sempre amarei, quero oficializar isso e ter um relacionamento ❤️</p>
+        <button onclick="showAnswer()">Sim!</button>
+        <button id="nao" onmouseover="moveButton()" ontouchstart="hideButton()">Não</button>
+    </section>
+    
+    <footer>
+        <p>Com todo meu amor, Arthur</p>
+    </footer>
+
+    <script>
+        function showAnswer() {
+            alert("AEEEEEE, Eu te amo muito meu amor");
+        }
+
+        function moveButton() {
+            let button = document.getElementById("nao");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.position = "absolute";
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+        
+        function hideButton() {
+            document.getElementById("nao").style.display = "none";
+        }
+    </script>
+</body>
+</html>
